@@ -14,23 +14,6 @@
 
 ^!a::
     {
-<<<<<<< HEAD
-        if WinExist("Autotask - CMIT")
-            WinActivate
-        else
-            Run "C:\Program Files (x86)\Google\Chrome\Application\chrome_proxy.exe  --profile-directory=Default --app-id=nijaiiofgknamapdnbanopnaalflgilo" 
-    }
-
-^!s::
-    {
-        Send "SonicWALL"
-    }
-
-^!w::
-    {
-        Send "WiFi"
-    }
-=======
         if WinExist("CRM")
             WinActivate
         else
@@ -43,12 +26,9 @@
             WinActivate
         else if WinExist("Field Notes - OneNote")
             WinActivate
-        else if WinExist("OneNote")
-            WinActivate
         else
             Run "ONENOTE.EXE"
     } 
->>>>>>> 76b46cbfdc8cb7b9df6df84330bddc1551f81bbe
 
 ^!r::
     {
@@ -58,19 +38,6 @@
             Run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://cmitcincy.screenconnect.com" 
     }
 
-<<<<<<< HEAD
-^!n::
-    { 
-        if WinExist("Remote Notes (Pending) - OneNote")
-            WinActivate
-        else if WinExist("OneNote")
-            WinActivate
-        else 
-            Run "ONENOTE.EXE"
-    } 
-
-=======
->>>>>>> 76b46cbfdc8cb7b9df6df84330bddc1551f81bbe
 #+c::
     {
         A_Clipboard:=""
