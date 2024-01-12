@@ -24,7 +24,7 @@
         }
         else
         {
-            Run "C:\Program Files (x86)\Google\Chrome\Application\chrome_proxy.exe  --profile-directory=Default --app-id=nijaiiofgknamapdnbanopnaalflgilo" 
+            PopUpError("Couldn't Activate Autotask Window")
         }
     }
 
@@ -67,7 +67,7 @@
         }
         else 
         {
-            Run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://cmitcincy.screenconnect.com" 
+            PopUpError("There isn't a Remote! browser open")
         }
     }
 
@@ -81,4 +81,14 @@
             WinActivate
             Send "^v{enter}"
         }
+        else 
+        {
+            PopUpError("No Allworx Interact Window to Activate")
+        }
+    }
+
+
+    PopUpError(ErrorString)
+    {
+        MsgBox ErrorString
     }
