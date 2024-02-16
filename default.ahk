@@ -26,6 +26,19 @@
             Run "calc"
         }
     }
+
+^!l::
+    {
+        if WinExist("Left!")
+        {
+            WinActivate
+        }
+        else 
+        {
+            PopUpError("No Xtra Window in Chrome")
+        }
+    }
+
 ^!m::
     {
         if WinExist("Tech Meeting")
@@ -94,18 +107,6 @@
 ^!w::
     {
         Send "WiFi"
-    }
-
-^!l::
-    {
-        if WinExist("Left!")
-        {
-            WinActivate
-        }
-        else 
-        {
-            PopUpError("No Xtra Window in Chrome")
-        }
     }
 
 #+c::
