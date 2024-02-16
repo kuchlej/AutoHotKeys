@@ -1,4 +1,21 @@
-﻿^!c::
+﻿^!a::
+    {
+        if WinExist("Autotask - CMIT")
+        {
+            WinActivate
+        } 
+        else if WinExist("Autotask")
+        {
+            WinActivate
+        }
+        else
+        {
+            PopUpError("Couldn't Activate Autotask Window")
+        }
+    }
+
+
+^!c::
     {
         if WinExist("Calculator")
         {
@@ -9,35 +26,17 @@
             Run "calc"
         }
     }
-
-^!t::
+^!m::
     {
-        TimeString := FormatTime( , "MM-dd-yyyy-hh:mm:sstt")
-        Send TimeString
-    }
-
-^!a::
-    {
-        if WinExist("Autotask - CMIT")
+        if WinExist("Tech Meeting")
         {
             WinActivate
         }
         else
         {
-            PopUpError("Couldn't Activate Autotask Window")
+            PopUpError("No tech meeting open in Teams!")
         }
     }
-
-^!s::
-    {
-        Send "SonicWALL"
-    }
-
-^!w::
-    {
-        Send "WiFi"
-    }
-      
 
 ^!n::
     { 
@@ -59,6 +58,16 @@
         }
     } 
 
+^!o::
+    {
+        if WinExist("Outlook")
+        {
+            WinActivate
+        } else {
+            Run "Outlook.exe"
+        }
+    }    
+
 ^!r::
     {
         if WinExist("Remote!")
@@ -68,6 +77,34 @@
         else 
         {
             PopUpError("There isn't a Remote! browser open")
+        }
+    }
+
+^!s::
+    {
+        Send "SonicWALL"
+    }
+
+^!t::
+    {
+        TimeString := FormatTime( , "MM-dd-yyyy-hh:mm:sstt")
+        Send TimeString
+    }
+
+^!w::
+    {
+        Send "WiFi"
+    }
+
+^!l::
+    {
+        if WinExist("Left!")
+        {
+            WinActivate
+        }
+        else 
+        {
+            PopUpError("No Xtra Window in Chrome")
         }
     }
 
