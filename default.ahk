@@ -27,6 +27,18 @@
         }
     }
 
+^!f::
+    {
+        if WinExist("Firefox")
+        {
+            WinActivate
+        }
+        else
+        {
+            Run "C:\Program Files\Mozilla Firefox\firefox.exe"
+        }
+    }
+
 ^!l::
     {
         if WinExist("Left!")
@@ -45,9 +57,13 @@
         {
             WinActivate
         }
+        else if WinExist("Microsoft Teams")
+        {
+            WinActivate
+        }
         else
         {
-            PopUpError("No tech meeting open in Teams!")
+            Run "ms-teams.exe"
         }
     }
 
