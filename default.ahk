@@ -41,13 +41,13 @@
 
 ^!l::
     {
-        if WinExist("Left!")
+        if WinExist("LiveChat")
         {
             WinActivate
         }
         else 
         {
-            PopUpError("No Xtra Window in Chrome")
+            Run "C:\Program Files\Google\Chrome\Application\chrome.exe https://my.livechatinc.com/home -new-window -window-name=LiveChat"
         }
     }
 
@@ -105,7 +105,7 @@
         }
         else 
         {
-            PopUpError("There isn't a Remote! browser open")
+            Run "C:\Program Files\Google\Chrome\Application\chrome.exe -window-name='Remote!'"
         }
     }
 
