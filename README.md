@@ -32,4 +32,6 @@ ctrl + alt + t = Send a timestamp into the current window. Updated to not includ
 
 ctrl + alt + w = Type in WiFi like ctrl + alt + s
 
-**ctrl + Shift + c = Copy a highlighted phone number, switch windows to Interact paste the nmber and dial. 
+ctrl + alt + z = Return to previous window exited via one of the above commands or even this one. 
+
+**ctrl + Shift + c = Copy a highlighted phone number, switch windows to Interact paste the number and dial. 
