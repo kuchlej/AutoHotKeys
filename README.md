@@ -1,6 +1,7 @@
 # AutoHotKeys
 
 Key:**= removed
+
 List of commands: 
 
 ctrl + alt + a = Switch to Autotask Window
